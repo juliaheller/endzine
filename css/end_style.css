@@ -16,7 +16,7 @@ body{
     ". logo text-box",
     "navbar . .",
     "footer footer footer";
-    grid-template-columns: 1fr 250px 2fr;
+    grid-template-columns: 0.5fr 250px 2fr;
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
     grid-row-gap: 1px;
     grid-column-gap: 1px;
@@ -70,6 +70,16 @@ li{
     text-align: right;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+
+  }
 .text-box { 
     grid-area: text-box;
     grid-column: 3 / 4;
@@ -83,14 +93,15 @@ li{
     justify-self: start;
     padding: 0 100px 0 5px;
     margin-left: 60px;
-    
+    line-height: 200%; 
 }
 
 .text {
     text-align: left;
     font-size: 18px;
     padding-left: 20px; 
-    margin-top: -5px;  
+    margin-top: -10px;  
+    line-height: 200%; 
    
 }
 
