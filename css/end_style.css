@@ -78,8 +78,8 @@ a {
 
 a:hover {
     text-decoration: underline;
-
   }
+
 .text-box { 
     grid-area: text-box;
     grid-column: 3 / 4;
@@ -138,4 +138,110 @@ a:hover {
 #landing-text{
     text-align: center;
     font-size: 25px; 
+}
+
+
+@media screen and (orientation: portrait) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "navbar",
+        "logo",
+        "text-box";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto);
+        grid-row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+    #logo {
+        grid-area: logo;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+        align-self: center;
+        min-width: 50%;
+        max-width: 100%;
+        padding:  10px 10px 50px;
+    }
+    
+    #logo img {
+        display: block;
+        min-width: 30%;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    #navbar {
+        grid-area: navbar;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 14px;
+        justify-self: center;
+       
+    }
+    
+
+    .listing {
+        display: inline-flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style-type: none;    
+    }
+    
+    
+    .text-box { 
+        grid-area: text-box;
+        grid-row-start: 3;
+        max-width: 100%;
+        min-width: 50%;
+        min-height: 100%;
+        border-top: 5px solid white;
+        justify-self: center;
+        padding: 50px 10px;
+        margin: 0;
+        border-left: none;
+        
+        
+    }
+    
+    .text {
+       
+        font-size: 16px; 
+        line-height: 200%; 
+    }
+    
+    
+    #landing-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+    }
+    
+    #landing-logo-box {
+        min-width: 200px;
+        max-width: 375px;
+        padding: 100px 0px;  
+    }
+    #landing-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 200px;
+        max-width: 375px;  
+    }
+    
+    #landing-text{
+        text-align: center;
+        font-size: 25px; 
+    }
+    
 }
