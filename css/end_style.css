@@ -181,7 +181,6 @@ a:hover {
     
     #navbar {
         grid-area: navbar;
-        justify-self: center;
         grid-row-start: 1;
         grid-row-end: 2;
         font-size: 14px;
@@ -191,25 +190,59 @@ a:hover {
         background-color: black;
         position: sticky;
         top: 0;
-        border-bottom: 5px solid white;
        
     }
     
-
-    .listing {
-        display: inline-flex;
+/*
+     .listing {
+       display: inline-flex;
         flex-wrap: wrap;
         text-decoration: none;
         list-style-type: none; 
-        padding: 0;   
+        padding: 0;  
+        
+    }
+
+    #burger-menu{
+        display: inline-block;
+        width: 1.25em;
+        height: 0.8em;
+        margin-right: 0.3em;
+        border-top: 0.2em solid #fff;
+        border-bottom: 0.2em solid #fff;
+    }
+
+    .listing:before {
+        content: "";
+        position: absolute;
+        top: 0.3em;
+        left: 0px;
+        width: 100%;
+        border-top: 0.2em solid #fff;
     }
     
-    li{
+    */
+    li { 
         padding: 5px;
         text-align: center;
         margin: 0;
     }
     
+    nav > ul > li {
+        display: none;
+      }
+      nav > ul:hover li {
+        display: block;
+      }
+      nav > ul::before {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        content: "Menu";
+        
+      }
+
+
     .text-box { 
        grid-area: text-box;
         grid-row-start: 3;
