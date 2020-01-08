@@ -72,8 +72,11 @@ li{
 
 a {
     text-decoration: none;
-    color: white;
-    
+    color: white;   
+}
+
+a#social_media, a#release_party, a#home, a#gallery, a#contact, a#impressum{
+    text-decoration: underline;
 }
 
 a:hover {
