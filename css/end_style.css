@@ -157,7 +157,6 @@ a:hover {
         grid-row-gap: 5px;
         justify-content: center;
         align-items: center; 
-      
     }
  
     #logo {
@@ -175,8 +174,7 @@ a:hover {
         display: block;
         width: 200px;
         margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: auto; 
     }
     
     #navbar {
@@ -187,43 +185,17 @@ a:hover {
         width: 100%;  
         margin: 0;
         padding: 0;
-        background-color: black;
         position: sticky;
-        top: 0;
-       
+        top: 0; 
     }
     
-/*
      .listing {
-       display: inline-flex;
-        flex-wrap: wrap;
         text-decoration: none;
         list-style-type: none; 
-        padding: 0;  
-        
+        padding: 0;   
     }
 
-    #burger-menu{
-        display: inline-block;
-        width: 1.25em;
-        height: 0.8em;
-        margin-right: 0.3em;
-        border-top: 0.2em solid #fff;
-        border-bottom: 0.2em solid #fff;
-    }
-
-    .listing:before {
-        content: "";
-        position: absolute;
-        top: 0.3em;
-        left: 0px;
-        width: 100%;
-        border-top: 0.2em solid #fff;
-    }
-    
-    */
     li { 
-        padding: 5px;
         text-align: center;
         margin: 0;
     }
@@ -231,31 +203,32 @@ a:hover {
     nav > ul > li {
         display: none;
       }
-      nav > ul:hover li {
+
+    nav > ul:hover li {
         display: block;
-      }
-      nav > ul::before {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        content: "Menu";
-        
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.719);
       }
 
+      nav > ul::before {
+        display: block;
+        margin-left: -10px;
+        margin-right: auto;
+        content: url(/images/burger-icon-menu-klein.png); 
+      }
 
     .text-box { 
        grid-area: text-box;
         grid-row-start: 3;
         grid-row-end: 4;
-        width: 100%;
+        width: 90vw;
         height: 350px;
         border-top: 5px solid white;
         justify-self: center;
         padding: 50px 0;
         margin: 0;
         border-left: none;
-        
-        
+          
     }
     
     .text {
