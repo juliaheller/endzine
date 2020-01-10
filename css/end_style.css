@@ -97,7 +97,13 @@ a:hover {
     justify-self: start;
     padding: 0 100px 0 5px;
     margin-left: 60px; 
+    overflow-wrap: break-word;
+    overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+    }
 
 .text {
     text-align: left;
@@ -234,6 +240,7 @@ a:hover {
         width: 0px; 
         background: transparent;
         }
+
 
     .text {
         font-size: 16px; 
