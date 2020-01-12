@@ -99,11 +99,15 @@ a:hover {
     margin-left: 60px; 
     overflow-wrap: break-word;
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
     width: 0px; 
     background: transparent;
     }
+
+ 
 
 .text {
     text-align: left;
@@ -223,6 +227,12 @@ a:hover {
         content: url(/images/burger-icon-menu-klein.png); 
       }
 
+      .menuVisible li{
+        display: block;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.719);
+    }
+    
     .text-box { 
        grid-area: text-box;
         grid-row-start: 3;
